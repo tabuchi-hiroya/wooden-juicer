@@ -1,0 +1,8 @@
+@import "layout/header";
+
+.test {
+  color: blue;
+  .test-child {
+    font-weight: bold;
+  }
+}

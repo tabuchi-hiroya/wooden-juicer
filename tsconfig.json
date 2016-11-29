@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outFile": "js/main.js",
+    "sourceMap": true
+  },
+  "files": [
+    "public/js/main.ts",
+    "public/js/hello.ts"
+  ]
+}
