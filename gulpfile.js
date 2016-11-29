@@ -31,10 +31,10 @@ gulp.task('bs-reload', function() {
 // Pug => HTML
 gulp.task('pug', function() {
   return gulp.src(
-    ['./source/**/*.pug'], {       // 対象ファイルの指定
+    ['./source/**/*.pug', '!./source/layouts/**/*.pug'], {       // 対象ファイルの指定
       base: 'source'               // 対象ディレクトリの階層構造の維持
     })
-    .pipe(pug({pretty: true}))    // pugファイルは書き出さない
+    .pipe(pug({pretty: true, basedir: __dirname + '/source/layouts'}))    // pugファイルは書き出さない
     .pipe(gulp.dest('./build'))   // 保存先ディレクトリの指定
 })
 

@@ -1,8 +1,11 @@
-doctype html
-html(lang="ja")
-  head
-    meta(charset="utf-8")
-    title test
-    link(rel="stylesheet", href="style.css")
-  body
-    h1 2nd Index
+extends /layout
+block title
+  title タイトル
+block meta
+  meta(name="description", content="ここに説明文が入ります。")
+block body
+  h1 2nd index
+  p.test
+    | test-
+    span.test-child
+      | child
