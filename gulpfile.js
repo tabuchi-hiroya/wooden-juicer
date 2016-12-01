@@ -31,10 +31,10 @@ gulp.task('bs-reload', function() {
 // Pug => HTML
 gulp.task('pug', function() {
   return gulp.src(
-    ['./source/**/*.pug', '!./source/layouts/**/*.pug'], {       // 対象ファイルの指定
+    ['./source/**/*.pug', '!./source/_layouts/**/*.pug', '!./source/_components/**/*.pug'], {       // 対象ファイルの指定
       base: 'source'               // 対象ディレクトリの階層構造の維持
     })
-    .pipe(pug({pretty: true, basedir: __dirname + '/source/layouts'}))    // pugファイルは書き出さない
+    .pipe(pug({pretty: true, basedir: __dirname + '/source/'}))    // pugファイルは書き出さない
     .pipe(gulp.dest('./build'))   // 保存先ディレクトリの指定
 })
 
@@ -88,6 +88,14 @@ gulp.task('default', ['server'], function() {
   gulp.watch('./source/**/*.scss', ['sass'])
   gulp.watch('./source/**/*.ts', ['ts'])
   gulp.watch('./source/**/*', ['bs-reload'])
+  // gulp.watch('./source/**/*.yml', ['data'])
+})
+
+// コンパイル
+gulp.task('build', function() {
+  gulp.watch('./source/**/*.pug', ['pug'])
+  gulp.watch('./source/**/*.scss', ['sass'])
+  gulp.watch('./source/**/*.ts', ['ts'])
   // gulp.watch('./source/**/*.yml', ['data'])
 })
 

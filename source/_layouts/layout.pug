@@ -1,0 +1,33 @@
+doctype
+html(lang="ja", prefix="og: http://ogp.me/ns#")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, user-scalable=yes, initial-scale=1.0")
+    meta(name="robots", content="index, floow")
+    meta(name="format-detection", content="telephone=no")
+    block title
+    block meta
+    //- 共通項目
+    meta(property="og:title" content="ページのタイトル")
+    meta(property="og:type" content="ページのタイプ")
+    meta(property="og:url" content="ページのURL")
+    meta(property="og:image" content="サムネイル画像のURL")
+    meta(property="og:site_name"  content="サイト名")
+    meta(property="og:description" content="ページのディスクリプション")
+    //- Facebook用
+    meta(property="fb:app_id" content="App ID")
+    meta(property="article:publisher" content="FacebookページのURL")
+    //- Twitter用
+    meta(name="twitter:title" content="ページのタイトル")
+    meta(name="twitter:url" content="ページのURL")
+    meta(name="twitter:description" content="ページのディスクリプション")
+    meta(name="twitter:image" content="サムネイル画像のURL")
+    link(rel="stylesheet", src="/css/style.css")
+  body
+    include /_components/inc_meta_facebook
+    .wrap
+      include /_layouts/header
+      block body
+      include /_layouts/footer
+    script(src="/js/main.js")

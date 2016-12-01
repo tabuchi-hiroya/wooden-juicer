@@ -4,11 +4,12 @@
   "description": "スタティックサイト開発環境の鋳型",
   "main": "gulpfile.js",
   "scripts": {
-    "pug": "gulp pug",
-    "sass": "gulp sass",
-    "ts": "gulp ts",
+    "pug"   : "gulp pug",
+    "sass"  : "gulp sass",
+    "ts"    : "gulp ts",
     "server": "gulp server",
-    "gulp": "gulp"
+    "build" : "npm run build",
+    "gulp"  : "gulp"
   },
   "repository": {
     "type": "git",
