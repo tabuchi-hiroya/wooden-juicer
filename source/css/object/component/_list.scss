@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* ul
+---------------------------------------------------------------------- */
+.disc {
+  display: table;
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: table-row;
+    &:before {
+      content: "●";
+      display: table-cell;
+      padding-right: .4em;
+    }
+    &:after {
+      content: "";
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+  ul {
+    margin-top: 1em;
+    padding-left: 0;
+    li {
+      &:before {
+        content: "○";
+      }
+    }
+    ul {
+      li {
+        &:before {
+          content: "●";
+        }
+      }
+    }
+  }
+}
+.list_note {
+  padding-left: 0;
+  list-style: none;
+  li {
+    padding-left: 1em;
+    &:before {
+      display: inline-block;
+      content: '※';
+      text-indent: -1em;
+    }
+  }
+  .en & {
+    li {
+      &:before {
+        content: '*';
+      }
+    }
+  }
+}
+
+/* ol
+---------------------------------------------------------------------- */
+.list_parenthesis {
+  counter-reset: table-ol;
+  li {
+    &:before {
+      content: "(" counter(table-ol) ")";
+    }
+  }
+}
+// Android hack
+.ua-android {
+  .list_parenthesis {
+    padding-left: 1.4em;
+    li {
+      &:before {
+        text-indent: -1.4em;
+      }
+    }
+  }
+}

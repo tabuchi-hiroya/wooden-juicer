@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+// Header
+.global_header {
+  @media #{$mq_pc} {
+  }
+  @media #{$mq_tablet} {
+  }
+  @media #{$mq_tablet_smartphone} {
+  }
+  .global_nav {
+    @media #{$mq_pc} {
+    }
+    @media #{$mq_tablet} {
+    }
+    @media #{$mq_tablet_smartphone} {
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* Footer */
+.global_footer {
+  @media #{$mq_pc} {
+  }
+  @media #{$mq_tablet} {
+  }
+  @media #{$mq_tablet_smartphone} {
+  }
+  .footer_nav {
+    @media #{$mq_pc} {
+    }
+    @media #{$mq_tablet} {
+    }
+    @media #{$mq_tablet_smartphone} {
+    }
+  }
+}
+.pagetop {
+}

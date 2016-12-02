@@ -1,0 +1,122 @@
+//  Variables
+//-------------------------------------
+
+//Support browser
+$support-ie6: false;
+$support-ie7: false;
+$support-ie8: false;
+$support-ie9: false;
+$support-mozilla: true;
+$support-webkit : true;
+$support-opera  : true;
+
+//  Media Queries
+//-------------------------------------
+$mq_pc:                "screen and (min-width:1025px)";
+$mq_tablet:            "screen and (min-width:768px) and (max-width:1024px)";
+$mq_pc_tablet:         "screen and (min-width: 741px)";
+$mq_tablet_smartphone: "screen and (max-width:1024px)";
+$mq_smartphone:        "screen and (max-width: 740px)";
+
+//  Media Queries
+//-------------------------------------
+$width-pc: 960px;
+$width-tablet-portrait: 920px;
+$width-tablet-landscape: 720px;
+$width-smartphone: 600px;
+
+// color
+$black_1: #111;
+$black: #333;
+$white: #fff;
+$gray_f0: #f0f0f0;
+$gray_e: #eee;
+$gray_e6: #e6e6e6;
+$gray_e0: #e0e0e0;
+$gray_d9: #d9d9d9;
+$gray_c: #ccc;
+$gray_a: #aaa;
+$gray_9: #999;
+$gray_6: #666;
+$gray_4: #444;
+$gray_dark: #242426;
+
+$gray_889: #8e8e9b;
+
+$red: #cf1818;
+$red_light: #e94c4c;
+$red_dark: #b90100;
+$red_grayish: #b90100;
+$opera: #e6195e;
+$cherry: #f2a6b7;
+// $orange: #da8a00;
+$orange: #f0870c;
+$lemon_yellow: #ffd21d;
+$yellow: #f8b305;
+
+$violet: #860c84;
+
+$indigo: #053a77;
+$cobalt: #0075bf;
+$light_blue: #94d3e1;
+$dark_blue: #1d68bb;
+$sky_blue: #007aad;
+
+$green: #167b1b;
+$deep_green: #004b42;
+$light_green: #a5cc27;
+
+$page_header_color: #1c1c1e;
+
+$service_advertising: #2879b2;
+$service_data_business: #26a65c;
+$service_medias: #f19412;
+$service_ecommerce: #8842a5;
+$service_others: #586878;
+
+$sales_staff_color: #095cb8;
+$system_engineer_color: #de6e00;
+$designer_color: #1c962d;
+$management_department_color: #6c18a6;
+
+$philosophy_red: #cf1818;
+
+// space
+$space_px: 8px;
+$space_px_1: $space_px;
+$space_px_2: $space_px * 2;
+$space_px_3: $space_px * 3;
+$space_px_4: $space_px * 4;
+$space_px_5: $space_px * 5;
+$space_px_6: $space_px * 6;
+$space_px_7: $space_px * 7;
+$space_px_8: $space_px * 8;
+$space_px_9: $space_px * 9;
+$space_px_10: $space_px * 10;
+
+$space_per: 2.5%;
+$space_per_1: $space_per;
+$space_per_2: $space_per * 2;
+$space_per_3: $space_per * 3;
+$space_per_4: $space_per * 4;
+$space_per_5: $space_per * 5;
+$space_per_6: $space_per * 6;
+$space_per_7: $space_per * 7;
+$space_per_8: $space_per * 8;
+$space_per_9: $space_per * 9;
+$space_per_10: $space_per * 10;
+
+
+// font size
+$fz_base: 1.4rem;
+$fz_xxs: $fz_base - .6rem;
+$fz_xs: $fz_base - .4rem;
+$fz_s: $fz_base - .2rem;
+$fz_m: $fz_base;
+$fz_l: $fz_base + .2rem;
+$fz_xl: $fz_base + .4rem;
+$fz_xxl: $fz_base + .6rem;
+
+
+// font family
+$font_family_body: Roboto, "Droid Sans", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;

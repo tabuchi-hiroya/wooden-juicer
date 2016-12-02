@@ -1,0 +1,38 @@
+// Form
+form {
+  .required {
+    padding: 2px 5px;
+    background: $red_light;
+    color: $white;
+    font-size: $fz_xs;
+  }
+}
+.formError {
+  .formErrorContent {
+    padding: $space_px_1;
+    border: 1px solid #f8c9c9;
+    background: #ffe4e4;
+    color: $red;
+  }
+}
+.formError.inline {
+  display: block;
+  .formErrorContent {
+    border: 1px solid #f8c9c9;
+  }
+}
+span.error_message {
+  display: block;
+  padding: 8px;
+  border: 1px solid #f8c9c9;
+  background: #ffe4e4;
+  color: $red;
+  font-size: 1.1rem;
+}
+input[type=text],
+textarea,
+select {
+  @media #{$mq_smartphone} {
+    width: 100%;
+  }
+}

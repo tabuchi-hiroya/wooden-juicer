@@ -1,0 +1,13 @@
+/* Layout box
+---------------------------------------------------------------------- */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  @media #{$mq_pc} {
+    width: $width-pc;
+  }
+  @media #{$mq_tablet} {
+  }
+  @media #{$mq_tablet_smartphone} {
+  }
+}

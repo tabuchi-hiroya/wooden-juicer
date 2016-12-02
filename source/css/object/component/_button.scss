@@ -1,0 +1,45 @@
+// /* ==========================================================================
+//    Button class
+//    ========================================================================== */
+//
+// // Button (default)
+// .btn {
+//     @include btn;
+//     @extend %btn_siblings;
+//     @extend %btn_pdf;
+// }
+// // Button (small)
+// .btn_s {
+//     @include btn;
+//     @include btn_s;
+//     @extend %btn_siblings;
+//     &:after {
+//         content: none;
+//     }
+// }
+//
+// // Link button
+// .btn_link {
+//     @include btn;
+//     @include btn_link;
+//     min-width: 200px;
+//     &.btn_s {
+//         @include btn_s;
+//     }
+//     &.is_negative {
+//         @include btn_link_is_negative;
+//     }
+//     @media screen and (max-width:420px) {
+//         width: 100%;
+//     }
+// }
+//
+// // Close button
+// .btn_close {
+//     &:before {
+//         content: '×';
+//         margin-right: 0.2em;
+//     }
+// }
+//
+//

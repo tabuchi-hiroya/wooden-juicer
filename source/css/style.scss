@@ -1,8 +1,23 @@
-@import "layout/header";
+@charset "UTF-8";
 
-.test {
-  color: blue;
-  .test-child {
-    font-weight: bold;
-  }
-}
+@import 'foundation/variable';
+@import 'foundation/function';
+@import 'foundation/mixin';
+@import 'foundation/normalize';
+// @import 'foundation/vendor';
+// @import 'foundation/vendor-extention';
+@import 'foundation/base';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+@import 'object/component/box';
+@import 'object/component/button';
+@import 'object/component/form';
+@import 'object/component/icon';
+@import 'object/component/list';
+@import 'object/component/table';
+@import 'object/component/typography';
+// @import 'object/project/';
+@import 'object/utility';

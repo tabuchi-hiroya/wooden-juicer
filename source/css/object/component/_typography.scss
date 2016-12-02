@@ -1,0 +1,39 @@
+/* Heading
+---------------------------------------------------------------------- */
+.ttl_a {
+}
+.ttl_b {
+}
+.ttl_ba {
+}
+.ttl_c {
+}
+.ttl_d {
+}
+.ttl_e {
+}
+.ttl_f {
+}
+
+.ttl_small {
+}
+
+
+/* Font size
+---------------------------------------------------------------------- */
+.fz_xxs { font-size: $fz_xxs; }
+.fz_xs { font-size: $fz_xs; }
+.fz_s { font-size: $fz_s; }
+.fz_m { font-size: $fz_m; }
+.fz_l { font-size: $fz_l; }
+.fz_xl { font-size: $fz_xl; }
+.fz_xxl { font-size: $fz_xxl; }
+@media #{$mq_smartphone} {
+    .fz_xxs { font-size: $fz_xxs; }
+    .fz_xs { font-size: $fz_xxs; }
+    .fz_s { font-size: $fz_xs; }
+    .fz_m { font-size: $fz_s; }
+    .fz_l { font-size: $fz_m; }
+    .fz_xl { font-size: $fz_l; }
+    .fz_xxl { font-size: $fz_xl; }
+}
