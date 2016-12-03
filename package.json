@@ -4,13 +4,12 @@
   "description": "スタティックサイト開発環境の鋳型",
   "main": "gulpfile.js",
   "scripts": {
-    "pug": "gulp pug",
-    "sass-comb": "gulp sass-comb",
-    "sass": "gulp sass",
-    "ts": "gulp ts",
+    "gulp": "gulp",
     "server": "gulp server",
-    "build": "npm run build",
-    "gulp": "gulp"
+    "comb": "gulp sass-comb",
+    "html": "gulp html",
+    "css": "gulp css",
+    "js": "gulp js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +35,7 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-typescript": "^3.1.3",
     "gulp-uglify": "^2.0.0",
+    "path": "^0.12.7",
     "stylelint": "^7.6.0",
     "typescript": "^2.0.10"
   }

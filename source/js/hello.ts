@@ -4,14 +4,14 @@ class Hello {
       this.greeting = message;
     }
     greet() {
-      return "Hello, " + this.greeting;
+      return "こんにちは, " + this.greeting;
     }
 }
 
-let hello = new Hello("world!!");
+let hello = new Hello("世界！");
 
 let button = document.createElement('button');
-button.textContent = "Hello?";
+button.textContent = "こんにちは？！";
 button.onclick = function() {
     alert(hello.greet());
 }

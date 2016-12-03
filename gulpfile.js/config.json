@@ -1,0 +1,23 @@
+{
+  "root": {
+    "src" : "source",
+    "dest": "build"
+  },
+  "task": {
+    "html": {
+      "_select-language": "html / pug",
+      "language": "pug"
+    },
+    "css": {
+      "_select-language": "scss / sass / postcss",
+      "language": "scss",
+      "sassOptions": {
+        "outputStyle": "expanded"
+      }
+    },
+    "js": {
+      "_select-language": "es5 / es2015 / ts",
+      "language": "es5"
+    }
+  }
+}
