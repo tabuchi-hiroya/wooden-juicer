@@ -4,6 +4,8 @@ var gulp         = require('gulp')
 var pug          = require('gulp-pug')
 var plumber      = require('gulp-plumber')
 var sass         = require('gulp-sass')
+var csscomb      = require('gulp-csscomb')
+var stylelint    = require('stylelint')
 var autoprefixer = require('gulp-autoprefixer')
 var sourcemaps   = require('gulp-sourcemaps')
 var frontnote    = require('gulp-frontnote')
@@ -45,6 +47,15 @@ gulp.task('pug', function() {
 //     .pipe(gulp.dest('./source/'))
 //     .pipe(browsersync.stream())
 // })
+
+// Sass => Sass
+gulp.task('sass-comb', function() {
+  gulp.src(['./source/**/*.scss'], {
+    base: 'source'
+  })
+  .pipe(csscomb())
+  .pipe(gulp.dest('./source'))            // 出力先の指定
+})
 
 // Sass => CSS
 gulp.task('sass', function() {
@@ -92,18 +103,4 @@ gulp.task('default', ['server'], function() {
 })
 
 // コンパイル
-gulp.task('build', function() {
-  gulp.watch('./source/**/*.pug', ['pug'])
-  gulp.watch('./source/**/*.scss', ['sass'])
-  gulp.watch('./source/**/*.ts', ['ts'])
-  // gulp.watch('./source/**/*.yml', ['data'])
-})
-
-// // コンパイル
-// gulp.task('compile', function() {
-//   exec('harp compile ./source ./build', function(err, stdout, stderr) {
-//     console.log(stdout)
-//     console.log(stderr)
-//     //cb(err)
-//   })
-// })
+gulp.task('build', ['pug', 'sass', 'ts'])

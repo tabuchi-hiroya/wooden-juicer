@@ -7,16 +7,16 @@ $support-ie7: false;
 $support-ie8: false;
 $support-ie9: false;
 $support-mozilla: true;
-$support-webkit : true;
-$support-opera  : true;
+$support-webkit: true;
+$support-opera: true;
 
 //  Media Queries
 //-------------------------------------
-$mq_pc:                "screen and (min-width:1025px)";
-$mq_tablet:            "screen and (min-width:768px) and (max-width:1024px)";
-$mq_pc_tablet:         "screen and (min-width: 741px)";
+$mq_pc: "screen and (min-width:1025px)";
+$mq_tablet: "screen and (min-width:768px) and (max-width:1024px)";
+$mq_pc_tablet: "screen and (min-width: 741px)";
 $mq_tablet_smartphone: "screen and (max-width:1024px)";
-$mq_smartphone:        "screen and (max-width: 740px)";
+$mq_smartphone: "screen and (max-width: 740px)";
 
 //  Media Queries
 //-------------------------------------
@@ -40,9 +40,7 @@ $gray_9: #999;
 $gray_6: #666;
 $gray_4: #444;
 $gray_dark: #242426;
-
 $gray_889: #8e8e9b;
-
 $red: #cf1818;
 $red_light: #e94c4c;
 $red_dark: #b90100;
@@ -53,32 +51,25 @@ $cherry: #f2a6b7;
 $orange: #f0870c;
 $lemon_yellow: #ffd21d;
 $yellow: #f8b305;
-
 $violet: #860c84;
-
 $indigo: #053a77;
 $cobalt: #0075bf;
 $light_blue: #94d3e1;
 $dark_blue: #1d68bb;
 $sky_blue: #007aad;
-
 $green: #167b1b;
 $deep_green: #004b42;
 $light_green: #a5cc27;
-
 $page_header_color: #1c1c1e;
-
 $service_advertising: #2879b2;
 $service_data_business: #26a65c;
 $service_medias: #f19412;
 $service_ecommerce: #8842a5;
 $service_others: #586878;
-
 $sales_staff_color: #095cb8;
 $system_engineer_color: #de6e00;
 $designer_color: #1c962d;
 $management_department_color: #6c18a6;
-
 $philosophy_red: #cf1818;
 
 // space
@@ -93,7 +84,6 @@ $space_px_7: $space_px * 7;
 $space_px_8: $space_px * 8;
 $space_px_9: $space_px * 9;
 $space_px_10: $space_px * 10;
-
 $space_per: 2.5%;
 $space_per_1: $space_per;
 $space_per_2: $space_per * 2;

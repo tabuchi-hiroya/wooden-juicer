@@ -1,8 +1,7 @@
 // Clearfix
 @mixin clearfix {
   @if $support-ie6 or $support-ie7 {
-    &:before,
-    &:after {
+    &:before, &:after {
       content: " ";
       display: table;
     }

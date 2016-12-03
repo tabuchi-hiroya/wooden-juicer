@@ -43,14 +43,14 @@
     padding-left: 1em;
     &:before {
       display: inline-block;
-      content: '※';
+      content: "※";
       text-indent: -1em;
     }
   }
   .en & {
     li {
       &:before {
-        content: '*';
+        content: "*";
       }
     }
   }

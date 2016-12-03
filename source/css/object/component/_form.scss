@@ -29,9 +29,7 @@ span.error_message {
   color: $red;
   font-size: 1.1rem;
 }
-input[type=text],
-textarea,
-select {
+input[type=text], textarea, select {
   @media #{$mq_smartphone} {
     width: 100%;
   }

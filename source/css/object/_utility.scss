@@ -1,13 +1,27 @@
 /* Text
 ---------------------------------------------------------------------- */
 /* Text style */
-.txt_normal { font-weight: normal !important; }
-.txt_bold { font-weight: bold !important; }
-.txt_italic { font-style: italic !important; }
+.txt_normal {
+  font-weight: normal !important;
+}
+.txt_bold {
+  font-weight: bold !important;
+}
+.txt_italic {
+  font-style: italic !important;
+}
 
-.txt_underline { text-decoration: underline !important; }
+.txt_underline {
+  text-decoration: underline !important;
+}
 
 /* Character alignment */
-.txt_left { text-align: left !important; }
-.txt_center { text-align: center !important; }
-.txt_right { text-align: right !important; }
+.txt_left {
+  text-align: left !important;
+}
+.txt_center {
+  text-align: center !important;
+}
+.txt_right {
+  text-align: right !important;
+}
