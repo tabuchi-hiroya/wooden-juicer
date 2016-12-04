@@ -1,0 +1,28 @@
+{
+  "env": {
+    // window.~は結構使うので
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    // console.logは開発中は結構使うのでwarningで留める
+    "no-console": [1],
+    // 使ってない変数は無駄なので教えて欲しいからwarning
+    "no-unused-vars": [1, {"vars": "all", "args": "after-used"}],
+    // 'use strict';はとりあえず必須にしておく
+    "strict": [2, "global"],
+    // indentは半角スペース2個が好き
+    "indent": [2, 2],
+    // シングルクオートの方が好きなので
+    "quotes": [2, "single"],
+    // スネークケースよりはキャメルケースで記述する方が慣れているけど、時々間違えるので統一させるためにエラーを出す
+    "camelcase": [2, {"properties": "always"}],
+    // スペースは1個だけ開ける
+    "no-multi-spaces": [2],
+    // スペースとタブが入り混じるとエンジニアは死ぬ
+    "no-mixed-spaces-and-tabs": [2],
+    // if文の後の中括弧はスペースあける派なので
+    "space-before-blocks": [2, "always"]
+  }
+}
