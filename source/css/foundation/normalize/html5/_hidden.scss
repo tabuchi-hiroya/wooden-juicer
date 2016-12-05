@@ -3,7 +3,6 @@
  * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
 
-[hidden],
-template {
+[hidden], template {
   display: none;
 }

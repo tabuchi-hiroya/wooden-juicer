@@ -4,12 +4,13 @@
   "description": "スタティックサイト開発環境の鋳型",
   "main": "gulpfile.js",
   "scripts": {
-    "pug"   : "gulp pug",
-    "sass"  : "gulp sass",
-    "ts"    : "gulp ts",
+    "gulp": "gulp",
     "server": "gulp server",
-    "build" : "npm run build",
-    "gulp"  : "gulp"
+    "comb": "gulp sass-comb",
+    "eslint": "gulp eslint",
+    "html": "gulp html",
+    "css": "gulp css",
+    "js": "gulp js"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,13 @@
   "homepage": "https://gitlab.com/buchiya4th1/static-site-boilerplate#README",
   "devDependencies": {
     "browser-sync": "^2.18.2",
+    "eslint": "^3.11.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-eslint": "^3.0.1",
     "gulp-frontnote": "^2.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.1.0",
@@ -33,6 +38,9 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-typescript": "^3.1.3",
     "gulp-uglify": "^2.0.0",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.1",
+    "stylelint": "^7.6.0",
     "typescript": "^2.0.10"
   }
 }

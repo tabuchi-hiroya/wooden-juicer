@@ -5,7 +5,6 @@
  * Correct `select` style inheritance in Firefox.
  */
 
-button,
-select {
+button, select {
   text-transform: none;
 }

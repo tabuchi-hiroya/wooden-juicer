@@ -9,14 +9,14 @@
   li {
     display: table-row;
     &:before {
-      content: "●";
       display: table-cell;
       padding-right: .4em;
+      content: "●";
     }
     &:after {
-      content: "";
       display: block;
       margin-bottom: 0;
+      content: "";
     }
   }
   ul {
@@ -43,14 +43,14 @@
     padding-left: 1em;
     &:before {
       display: inline-block;
-      content: '※';
       text-indent: -1em;
+      content: "※";
     }
   }
   .en & {
     li {
       &:before {
-        content: '*';
+        content: "*";
       }
     }
   }

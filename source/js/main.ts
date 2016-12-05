@@ -11,7 +11,7 @@ class Greeter {
 let greeter = new Greeter("世界。");
 
 let button = document.createElement('button');
-button.textContent = "ぼたん";
+button.textContent = "button";
 button.onclick = function() {
     alert(greeter.greet());
 }
