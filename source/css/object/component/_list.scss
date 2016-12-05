@@ -1,7 +1,36 @@
-@charset "UTF-8";
+/* リスト共通
+---------------------------------------------------------------------- */
+ul, ol {
+}
 
 /* ul
 ---------------------------------------------------------------------- */
+
+/*
+#styleguide
+ul - クラス指定なし
+
+```
+<ul>
+  <li>リスト</li>
+  <li>リスト</li>
+  <li>リスト</li>
+</ul>
+```
+ */
+
+/*
+#styleguide
+ul - 黒丸
+
+```
+<ul class="disc">
+  <li>リスト</li>
+  <li>リスト</li>
+  <li>リスト</li>
+</ul>
+```
+ */
 .disc {
   display: table;
   padding-left: 0;
@@ -36,6 +65,19 @@
     }
   }
 }
+
+/*
+#styleguide
+ul - 注釈
+
+```
+<ul class="list_note">
+  <li>リスト</li>
+  <li>リスト</li>
+  <li>リスト</li>
+</ul>
+```
+ */
 .list_note {
   padding-left: 0;
   list-style: none;
@@ -47,22 +89,44 @@
       content: "※";
     }
   }
-  .en & {
-    li {
-      &:before {
-        content: "*";
-      }
-    }
-  }
 }
+
 
 /* ol
 ---------------------------------------------------------------------- */
+
+/*
+#styleguide
+ol - クラス指定なし
+
+```
+<ol>
+  <li>リスト</li>
+  <li>リスト</li>
+  <li>リスト</li>
+</ol>
+```
+ */
+
+/*
+#styleguide
+ol - 丸括弧
+
+```
+<ol class="list_parenthesis">
+  <li>リスト</li>
+  <li>リスト</li>
+  <li>リスト</li>
+</ol>
+```
+ */
 .list_parenthesis {
+  list-style-type: none;
   counter-reset: table-ol;
   li {
     &:before {
       content: "(" counter(table-ol) ")";
+      counter-increment: table-ol;
     }
   }
 }
@@ -77,3 +141,19 @@
     }
   }
 }
+
+
+/* dl
+---------------------------------------------------------------------- */
+
+/*
+#styleguide
+dl - クラス指定なし
+
+```
+<dl>
+  <dt>dt</dt>
+  <dd>dd</dd>
+</dl>
+```
+ */

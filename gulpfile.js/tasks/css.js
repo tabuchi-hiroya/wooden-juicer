@@ -35,7 +35,9 @@ gulp.task('scss', function() {
   .pipe(plumber())                     // エラー時のgulp停止の回避
   .pipe(frontnote({
     out: './doc',
-    css: './css/style.css'
+    css: '../' + config.root.dest + '/css/style.css',
+    title: 'static-site boilerplate スタイルガイド',
+    overview: config.root.src + '/css/styleguide.md'
   }))
   .pipe(sourcemaps.init())             // sourcempapを出力
   .pipe(sass({style: 'expanded'}))     // コンパイル実行:出力形式の種類 #nested, compact, compressed, expanded.

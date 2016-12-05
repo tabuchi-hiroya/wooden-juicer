@@ -1,3 +1,21 @@
+/*
+#styleguide
+フォーム
+
+```
+<form>
+  <div>
+    <input type="checkbox" name="kamoku" value="国語">国語
+    <input type="checkbox" name="kamoku" value="英語">英語
+    <input type="checkbox" name="kamoku" value="算数">算数
+    <input type="checkbox" name="kamoku" value="理科">理科
+    <input type="checkbox" name="kamoku" value="社会">社会
+    <input type="checkbox" name="kamoku" value="体育">体育
+  </div>
+</form>
+```
+ */
+
 // Form
 form {
   .required {

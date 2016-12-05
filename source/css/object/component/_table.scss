@@ -1,0 +1,59 @@
+/*
+#styleguide
+テーブル
+
+```
+<table>
+  <tr>
+    <th>th</th>
+    <td>td</td>
+  </tr>
+  <tr>
+    <th>th</th>
+    <td>td</td>
+  </tr>
+  <tr>
+    <th>th</th>
+    <td>td</td>
+  </tr>
+  <tr>
+    <th>th</th>
+    <td>td</td>
+  </tr>
+</table>
+```
+ */
+table {
+}
+th {
+  font-weight: normal;
+}
+td {
+  
+}
+
+ /*
+ #styleguide
+ テーブル
+
+ ```
+ <table class="table-col">
+   <tr>
+     <th>th</th>
+     <th>th</th>
+   </tr>
+   <tr>
+     <td>td</td>
+     <td>td</td>
+   </tr>
+   <tr>
+     <td>td</td>
+     <td>td</td>
+   </tr>
+   <tr>
+     <td>td</td>
+     <td>td</td>
+   </tr>
+ </table>
+ ```
+  */
