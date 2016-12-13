@@ -1,0 +1,33 @@
+header.header
+  .navbar.navbar-material-grey.container-fluid
+    .row
+      .navbar-header
+        a.navbar-brand href="/admin/member_versions.html"
+          img src="/img/logo_db.png" alt="社員DB"
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li
+            a href="/admin/member_versions.html" 社員情報
+          li
+            a href="/admin/organization_versions.html" 組織情報
+          li
+            a href="/admin/companies.html" 子会社管理
+          li
+            a href="/admin/post_ranks.html" 役職管理
+        .header-add
+          a.btn.btn-fab.dropdown-toggle href="javascript:void(0)" data-target="#" data-toggle="dropdown"
+            i.glyphicon.glyphicon-plus aria-hidden="true"
+          ul.dropdown-menu
+            li
+              a href="/admin/member_versions/create.html" 社員の追加
+            li
+              a href="/admin/organization_versions/create.html" 組織の追加
+            li
+              a href="/admin/companies/create.html" 子会社の追加
+            li
+              a href="/admin/post_ranks/create.html" 役職の追加
+        ul.nav.navbar-nav.navbar-right
+          li
+            a href="/password/change.html" パスワード変更
+          li
+            a href="/auth/login_admin.html" ログアウト

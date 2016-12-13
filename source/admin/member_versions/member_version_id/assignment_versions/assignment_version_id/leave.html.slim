@@ -1,0 +1,45 @@
+---
+title: 離属｜社員DB
+---
+
+main.theme-input.theme-create.container-fluid
+  .row.row-ttl
+    h1.ttl-l1 離属
+  .row
+    form.input-form action="" method="post"
+      .ttl-l2
+        .ttl-l2__name
+          span.last-name 矢吹
+          span.first-name 拓
+        .ttl-l2__small
+          | 入社日：
+          span.join 2013年4月1日
+      table.input-table
+        tr
+          th.input-table__group グループ
+          td.input-table__group サービスデベロップメントグループ 
+        tr
+          th.input-table__division ディビジョン
+          td.input-table__division インフラストラクチャーディビジョン
+        tr
+          th.input-table__unit ユニット
+          td.input-table__unit 第二ユニット
+        tr
+          th.input-table__team チーム
+          td.input-table__team ―
+        tr
+          th.input-table__change-date 配属日
+          td.input-table__change-date 2015年11月01日
+        tr
+          th.input-table__leave-department-date 離属日
+          td.input-table__leave-department-date
+            .form-group.label-floating
+                label.control-label for="leave-department-date" yyyy/mm/dd
+                input#leave-department-date.datepicker.form-control type="text"
+      .btn-area
+        button.btn onClick="history.back(); return false;" キャンセル
+        button.btn.btn-submit type="button" onclick="location.href='/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/leave_confirm.html'" 確認する
+
+
+
+

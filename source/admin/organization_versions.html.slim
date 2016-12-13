@@ -1,0 +1,157 @@
+---
+title: 組織情報一覧｜社員DB
+---
+
+main.container-fluid
+  .row.row-ttl
+    h1.ttl-l1 組織情報
+  .row
+    p
+      a.btn.btn-add href="/admin/organization_versions/create.html" 組織を追加
+  .search.row
+    form.search-form action="" method="post"
+      .search__row
+        .search__col-first
+          .search__col-top
+            fieldset.search__org
+              legend.search-title.ttl-b 組織を探す
+              table.search__table.search__table--org
+                tr
+                  th.search__company 会社
+                  td.search__company
+                    select#company.chosen name="company" data-placeholder="会社を選択"
+                      option value=""
+                      option value="1" アドウェイズ
+                      option value="2" ばるびっと
+                      option value="3" こぱん
+                  td.search__company
+                    button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+                tr
+                  th.search__group グループ
+                  td.search__group
+                    select#group.chosen name="" data-placeholder="グループを選択"
+                      option value=""
+                      option value="1" BDG
+                      option value="2" SDG
+                      option value="3" 新規領域グループ
+                  td.search__group
+                    button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+                tr
+                  th.search__division ディビジョン
+                  td.search__division
+                    select#division.chosen name="" data-placeholder="ディビジョンを選択"
+                      option value=""
+                      option value="1" インフラ
+                      option value="2" アドテク
+                      option value="3" デベロップ
+                      option value="4" クリエイティブ
+                  td.search__division
+                    button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+                tr
+                  th.search__unit ユニット
+                  td.search__unit
+                    select#unit.chosen name="" data-placeholder="ユニットを選択"
+                      option value=""
+                      option value="1" 第一ユニット
+                      option value="2" 第二ユニット
+                  td.search__unit
+                    button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+                tr
+                  th.search__team チーム
+                  td.search__team
+                    select#team.chosen name="" data-placeholder="チームを選択"
+                      option value=""
+                      option value="1"
+                      option value="2"
+                      option value="3"
+                  td.search__team
+                    button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+          .search__col-bottom
+            table.search__table
+              th.target-list 検索対象
+              td.target-list
+                ul
+            table.search__other
+              tr
+                th.search__term 期間指定
+                td.search__term
+                  .table-item.range
+                    .form-group.label-floating
+                      label.control-label for="term-start" yyyy/mm
+                      input#term-start.datepicker-month.form-control type="text"
+                    .form-group.label-floating
+                      label.control-label for="term-end" yyyy/mm
+                      input#term-end.datepicker-month.form-control type="text"
+          .search__row
+            p.btn-search
+              button.btn 検索
+  .data-table-area.row
+    table.list-table
+      thead
+        tr
+          th.list-table__company 会社
+          th.list-table__group グループ
+          th.list-table__division ディビジョン
+          th.list-table__unit ユニット
+          th.list-table__team チーム
+          th.list-table__founded 設立日
+          th.list-table__disuse 廃止日
+          th.list-table__update 最終更新日
+          th.list-table__edit 操作
+      tbody
+        tr
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division インフラストラクチャーディビジョン
+          td.list-table__unit 第二ユニット
+          td.list-table__team ―
+          td.list-table__founded 2015-10-01
+          td.list-table__disuse 2015-10-01
+          td.list-table__update 2015-10-01 15:03:55
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/organization_versions/organization_version_id/update.html" 編集
+        tr
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division インフラストラクチャーディビジョン
+          td.list-table__unit 第二ユニット
+          td.list-table__team ―
+          td.list-table__founded 2015-10-01
+          td.list-table__disuse 2015-10-01
+          td.list-table__update 2015-10-01 15:03:55
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/organization_versions/organization_version_id/update.html" 編集
+        tr
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division インフラストラクチャーディビジョン
+          td.list-table__unit 第二ユニット
+          td.list-table__team ―
+          td.list-table__founded 2015-10-01
+          td.list-table__disuse 2015-10-01
+          td.list-table__update 2015-10-01 15:03:55
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/organization_versions/organization_version_id/update.html" 編集
+        tr
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division インフラストラクチャーディビジョン
+          td.list-table__unit 第二ユニット
+          td.list-table__team ―
+          td.list-table__founded 2015-10-01
+          td.list-table__disuse 2015-10-01
+          td.list-table__update 2015-10-01 15:03:55
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/organization_versions/organization_version_id/update.html" 編集
+        tr
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division インフラストラクチャーディビジョン
+          td.list-table__unit 第二ユニット
+          td.list-table__team ―
+          td.list-table__founded 2015-10-01
+          td.list-table__disuse 2015-10-01
+          td.list-table__update 2015-10-01 15:03:55
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/organization_versions/organization_version_id/update.html" 編集
+

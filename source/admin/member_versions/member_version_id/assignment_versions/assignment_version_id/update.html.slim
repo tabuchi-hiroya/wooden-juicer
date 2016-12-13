@@ -1,0 +1,53 @@
+---
+title: 所属の訂正｜社員DB
+---
+
+main.theme-input.theme-change.container-fluid
+  .row.row-ttl
+    h1.ttl-l1 所属の訂正
+  .row.row-input
+    form.input-form action="" method="post"
+      .ttl-l2
+        .ttl-l2__name
+          span.last-name 矢吹
+          span.first-name 拓
+        .ttl-l2__small
+          | 入社日：
+          span.join 2013年4月1日
+      table.input-table
+        tr
+          th.input-table__group グループ
+          td.input-table__group
+          td.input-table__group.input-after サービスデベロップメントグループ
+        tr
+          th.input-table__division ディビジョン
+          td.input-table__division
+          td.input-table__division.input-after インフラストラクチャーディビジョン
+        tr
+          th.input-table__unit ユニット
+          td.input-table__unit
+          td.input-table__unit.input-after 第二ユニット 
+        tr
+          th.input-table__team チーム
+          td.input-table__team
+          td.input-table__team.input-after ―
+        tr
+          th.input-table__post 役職
+          td.input-table__post
+          td.input-table__post.input-after ユニットマネージャ
+        tr
+          th.input-table__affiliation-style 所属形態
+          td.input-table__affiliation-style
+          td.input-table__affiliation-style.input-after 主
+        tr
+          th.input-table__employment-status 雇用形態
+          td.input-table__employment-status 正社員
+          td.input-table__employment-status.input-after
+            select#employment-status.chosen name="" data-placeholder="雇用形態を選択"
+              option value=""
+              option value="1" 正社員
+              option value="2" アルバイト
+              option value="3" バイトリーダー
+      .btn-area
+        button.btn onClick="history.back(); return false;" キャンセル
+        button.btn.btn-submit type="button" onclick="location.href='/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/update_confirm.html'" 確認する

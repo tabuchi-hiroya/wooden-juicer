@@ -1,0 +1,86 @@
+---
+title: 組織の追加｜社員DB
+---
+
+main.theme-input.theme-create.container-fluid
+  .row.row-ttl
+    h1.ttl-l1 組織の追加
+  .row
+    form.input-form action="" method="post"
+      table.input-table.input-table--org
+        tr#org-structure
+          th.input-table__org-structure 追加する組織
+          td.input-table__org-structure
+            span.radio
+              label
+                input#org-structure__group type="radio" name="org-structure" value="" グループ
+            span.radio
+              label
+                input#org-structure__division type="radio" name="org-structure" value="" ディビジョン
+            span.radio
+              label
+                input#org-structure__unit type="radio" name="org-structure" value="" ユニット
+            span.radio
+              label
+                input#org-structure__team type="radio" name="org-structure" value="" チーム
+        tr.input-table__group
+          th.input-table__group グループ
+          td.input-table__group
+            select#group.chosen name="" data-placeholder="グループを選択"
+              option value=""
+              option value="1" BDG
+              option value="2" SDG
+              option value="3" 新規領域グループ
+        tr.input-table__division
+          th.input-table__division ディビジョン
+          td.input-table__division
+            select#division.chosen name="" data-placeholder="ディビジョンを選択"
+              option value=""
+              option value="1" インフラ
+              option value="2" アドテク
+              option value="3" デベロップ
+              option value="4" クリエイティブ
+        tr.input-table__unit
+          th.input-table__unit ユニット
+          td.input-table__unit
+            select#unit.chosen name="" data-placeholder="ユニットを選択"
+              option value=""
+              option value="1" 第一ユニット
+              option value="2" 第二ユニット
+        tr
+          th.input-table__companies-flag
+          td.input-table__companies-flag
+            .checkbox
+              label
+                input.create-handle type="checkbox"
+                .checkbox-material 子会社を紐付ける
+        tr
+          th.input-table__org-name
+            span#org-name--new-org.org-name--new-org
+              | 組織名
+            span#org-name--companies.org-name--companies
+              | 子会社名
+          td.input-table__org-name
+            .create-handle--new-org
+              .form-group.label-floating
+                input#last-name.form-control type="text" name="" maxlength=""
+              p.txt-note
+                | ※子会社の追加は
+                a href="/admin/companies/create.html" 子会社の追加
+                | からおこなってください。
+            .create-handle--companies
+              select#division.chosen name="" data-placeholder="ディビジョンを選択"
+                option value=""
+                option value="1" インフラ
+                option value="2" アドテク
+                option value="3" デベロップ
+                option value="4" クリエイティブ
+        tr
+          th.input-table__foundation 設立日
+          td.input-table__foundation
+            .form-group.label-floating
+              label.control-label for="foundation-start" yyyy/mm/dd
+              input#foundation-start.datepicker.form-control type="text"
+      .btn-area
+        button.btn onClick="history.back(); return false;" キャンセル
+        button.btn.btn-submit type="button" onclick="location.href='/admin/organization_versions/confirm.html'" 確認する

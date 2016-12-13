@@ -5,8 +5,8 @@
   },
   "task": {
     "html": {
-      "_select-language": "html / pug",
-      "language": "pug"
+      "_select-language": "pug / slim",
+      "language": "slim"
     },
     "css": {
       "_select-language": "scss / sass / postcss",

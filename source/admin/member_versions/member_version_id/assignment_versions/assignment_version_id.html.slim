@@ -1,0 +1,168 @@
+---
+title: 社員情報｜社員DB
+---
+
+main.container-fluid
+  .row.row-ttl
+    h1.ttl-l1
+      | 社員情報 - 
+      span.last-name 矢吹
+      span.first-name 拓
+  .row
+    h2.ttl-s1 社員情報
+  .row
+    table.member-table
+      tr
+        th 社員番号
+        td
+          span.number 0000
+      tr
+        th 名前
+        td
+          span.last-name 矢吹
+          span.first-name 拓
+      tr
+        th フリガナ
+        td
+          span.last-phonetic ヤブキ
+          span.first-phonetic タク
+      tr
+        th ログインID
+        td
+          span.loginid yabuki_taku
+      tr
+        th メールアドレス
+        td
+          span.mail yabuki.taku@adways.net
+      tr
+        th 入社日
+        td
+          span.join 2013年4月1日
+      tr
+        th 退社日
+        td
+          span.leave ―
+    a.btn.btn-sm.btn-edit href="/admin/member_versions/member_version_id/update.html" 訂正
+  .row
+    h2.ttl-s1 所属部署
+  .data-table-area.row
+    .button-list.clearfix
+      button.btn.btn-sm.btn-material-blue-grey 社内外表示切替
+      a.btn.btn-sm.btn-add.pull-right href="/admin/member_versions/member_version_id/assignment_versions/create.html" 所属の追加
+    table.list-table.tablesorter
+      thead
+        tr
+          th.list-table__present-post 現職
+          th.list-table__affiliation-style 所属形態
+          th.list-table__company 会社
+          th.list-table__group グループ
+          th.list-table__division ディビジョン
+          th.list-table__unit ユニット
+          th.list-table__team チーム
+          th.list-table__post 役職
+          th.list-table__employment-status 雇用形態
+          th.list-table__appointed-date 着任日
+          th.list-table__leave-department-date 離任日
+          th.list-table__update 最終更新日
+          th.list-table__edit 操作
+      tbody
+        tr
+          td.list-table__present-post ★
+          td.list-table__affiliation-style 主
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division インフラストラクチャーディビジョン
+          td.list-table__unit 第二ユニット
+          td.list-table__team ―
+          td.list-table__post ユニットマネージャ
+          td.list-table__employment-status 正社員
+          td.list-table__appointed-date 2015年11月01日
+          td.list-table__leave-department-date ―
+          td.list-table__update 2015年11月01日
+          td.list-table__edit
+            .btn-group
+              a.btn.btn-sm.dropdown-toggle href="javascript:void(0)" data-target="#" data-toggle="dropdown"
+                | 編集
+                span.caret
+              ul.dropdown-menu
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/copy.html" 異動／昇降格
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/leave.html" 離属
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/update.html" 訂正
+        tr
+          td.list-table__present-post 
+          td.list-table__affiliation-style 主
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit 情報管理ユニット
+          td.list-table__team ―
+          td.list-table__post ユニットマネージャ
+          td.list-table__employment-status 正社員
+          td.list-table__appointed-date 2015年04月01日
+          td.list-table__leave-department-date 2015年10月31日
+          td.list-table__update 2015年10月31日
+          td.list-table__edit
+            .btn-group
+              a.btn.btn-sm.dropdown-toggle href="javascript:void(0)" data-target="#" data-toggle="dropdown"
+                | 編集
+                span.caret
+              ul.dropdown-menu
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/copy.html" 異動／昇降格
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/leave.html" 離属
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/update.html" 訂正
+        tr
+          td.list-table__present-post 
+          td.list-table__affiliation-style 主
+          td.list-table__company アドウェイズ
+          td.list-table__group 開発グループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit 情報管理ユニット
+          td.list-table__team ―
+          td.list-table__post ユニットマネージャ
+          td.list-table__employment-status 正社員
+          td.list-table__appointed-date 2014年10月01日
+          td.list-table__leave-department-date 2015年03月31日
+          td.list-table__update 2015年03月31日
+          td.list-table__edit
+            .btn-group
+              a.btn.btn-sm.dropdown-toggle href="javascript:void(0)" data-target="#" data-toggle="dropdown"
+                | 編集
+                span.caret
+              ul.dropdown-menu
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/copy.html" 異動／昇降格
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/leave.html" 離属
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/update.html" 訂正
+        tr
+          td.list-table__present-post 
+          td.list-table__affiliation-style 主
+          td.list-table__company アドウェイズ
+          td.list-table__group 開発グループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit 情報管理ユニット
+          td.list-table__team ―
+          td.list-table__post ―
+          td.list-table__employment-status 正社員
+          td.list-table__appointed-date 2013年10月01日
+          td.list-table__leave-department-date 2014年09月30日
+          td.list-table__update 2014年09月30日
+          td.list-table__edit
+            .btn-group
+              a.btn.btn-sm.dropdown-toggle href="javascript:void(0)" data-target="#" data-toggle="dropdown"
+                | 編集
+                span.caret
+              ul.dropdown-menu
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/copy.html" 異動／昇降格
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/leave.html" 離属
+                li
+                  a href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id/update.html" 訂正

@@ -1,0 +1,31 @@
+---
+title: 子会社の追加｜社員DB
+---
+
+main.theme-confirm.theme-create.container-fluid
+  .row.row-ttl
+    h1.ttl-l1 子会社の追加
+  .row
+    p.txt-confirm こちらの内容で追加してもよろしいですか？
+  .row
+    form.input-form action="" method="post"
+      table.input-table
+        tr
+          th.input-table__org-name 子会社名
+          td.input-table__org-name アドナビ株式会社
+      .btn-area
+        button.btn onClick="history.back(); return false;" キャンセル
+        button.btn.btn-submit type="button" data-toggle="modal" data-target="#modal" 登録する
+#modal.modal.dismiss.bs role="dialog" data-backdrop="static"
+  .modal-dialog
+    .modal-content
+      .modal-header
+        .ttl-l1 子会社の追加
+      .modal-body
+        p.txt-finish
+          | 登録しました。
+          br
+          | 子会社を組織構成に紐付けてください。
+      .modal-footer
+        a.btn.btn-submit href="/admin/organization_versions/create.html" 組織に紐付ける
+

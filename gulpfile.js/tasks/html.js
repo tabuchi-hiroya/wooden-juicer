@@ -34,3 +34,22 @@ gulp.task('pug', function() {
 //     .pipe(gulp.dest('./source/'))
 //     .pipe(browsersync.stream())
 // })
+
+
+// =============================================================================
+// slim
+// -----------------------------------------------------------------------------
+var slim    = require('gulp-slim')
+var plumber = require('gulp-plumber')
+
+// slim => HTML
+gulp.task('slim', function() {
+  gulp.src(config.root.src + '/**/*.slim')
+  // .pipe(plumber())
+  .pipe(slim({
+    pretty: true,
+    require: 'slim/include'
+    // options: 'include_dirs=['includes']'
+  }))
+  .pipe(gulp.dest(config.root.dest))
+})

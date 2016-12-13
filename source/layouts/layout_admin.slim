@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+
+    /! Always force latest IE rendering engine or request Chrome Frame
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+
+    /! Use title if it's in the page YAML frontmatter
+    title = data.page.title || "社員DB"
+
+    == stylesheet_link_tag "bootstrap", "vendor/chosen.min", "vendor/bootstrap-datepicker", "addb"
+
+  body class="#{page_classes}"
+    .wrap
+      == partial "layouts/header_admin"
+      == yield
+    == javascript_include_tag "underscore", "jquery-2.1.4.min", "jquery.tablesorter.min", "jquery.metadata", "chosen.jquery.min", "bootstrap-datepicker.min", "bootstrap-datepicker.ja.min", "bootstrap.min", "material", "ripples", "main"
+    script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"

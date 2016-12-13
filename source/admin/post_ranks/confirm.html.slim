@@ -1,0 +1,29 @@
+---
+title: 役職の追加｜社員DB
+---
+
+main.theme-confirm.theme-create.container-fluid
+  .row.row-ttl
+    h1.ttl-l1 役職の追加
+  .row
+    p.txt-confirm こちらの内容で追加してもよろしいですか？
+  .row
+    form.input-form action="" method="post"
+      table.input-table
+        tr
+          th.input-table__org-name 役職名
+          td.input-table__org-name テストマネージャー
+      .btn-area
+        button.btn onClick="history.back(); return false;" キャンセル
+        button.btn.btn-submit type="button" data-toggle="modal" data-target="#modal"登録する
+#modal.modal.dismiss.bs role="dialog" data-backdrop="static"
+  .modal-dialog
+    .modal-content
+      .modal-header
+        .ttl-l1 役職の追加
+      .modal-body
+        p.txt-finish 登録しました。
+      .modal-footer
+        a.btn.btn-submit href="/admin/post_ranks.html" 完了
+        a.btn.btn-continue href="/admin/post_ranks/create.html" 続けて登録する
+

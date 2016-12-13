@@ -1,0 +1,89 @@
+---
+title: 所属の追加｜社員DB
+---
+
+main.theme-input.theme-create.container-fluid
+  .row.row-ttl
+    h1.ttl-l1 所属の追加
+  .row
+    form.input-form action="" method="post"
+      .ttl-l2
+        .ttl-l2__name
+          span.last-name 矢吹
+          span.first-name 拓
+        .ttl-l2__small
+          | 入社日：
+          span.join 2013年4月1日
+      table.input-table
+        tr
+          th.input-table__mail メールアドレス
+          td.input-table__mail
+            input#mail.form-control type="text" name="" maxlength=""
+        tr
+          th.input-table__group グループ
+          td.input-table__group
+            select#group.chosen name="" data-placeholder="グループを選択"
+              option value=""
+              option value="1" BDG
+              option value="2" SDG
+              option value="3" 新規領域グループ
+        tr
+          th.input-table__division ディビジョン
+          td.input-table__division
+            select#division.chosen name="" data-placeholder="ディビジョンを選択"
+              option value=""
+              option value="1" インフラ
+              option value="2" アドテク
+              option value="3" デベロップ
+              option value="4" クリエイティブ
+        tr
+          th.input-table__unit ユニット
+          td.input-table__unit
+            select#unit.chosen name="" data-placeholder="ユニットを選択"
+              option value=""
+              option value="1" 第一ユニット
+              option value="2" 第二ユニット
+        tr
+          th.input-table__team チーム
+          td.input-table__team
+            select#team.chosen name="" data-placeholder="チームを選択"
+              option value=""
+              option value="1" 
+              option value="2" 
+              option value="3" 
+        tr
+          th.input-table__post 役職
+          td.input-table__post
+            select#post.chosen name="" data-placeholder="役職を選択"
+              option value=""
+              option value="1" チーフ
+              option value="2" ユニットマネージャ
+              option value="3" バイステクニカルマネージャ
+        tr
+          th.input-table__affiliation-style 所属形態
+          td.input-table__affiliation-style
+            select#affiliation-style.chosen name="" data-placeholder="所属形態を選択"
+              option value=""
+              option value="1" 主
+              option value="2" 兼務
+        tr
+          th.input-table__employment-status 雇用形態
+          td.input-table__employment-status
+            select#employment-status.chosen name="" data-placeholder="雇用形態を選択"
+              option value=""
+              option value="1" 正社員
+              option value="2" アルバイト
+              option value="3" バイトリーダー
+        tr
+          th.input-table__change-date 配属日
+          td.input-table__change-date
+            .form-group.label-floating
+                label.control-label for="change-date" yyyy/mm/dd
+                input#change-date.datepicker.form-control type="text"
+      .btn-area
+        button.btn onClick="history.back(); return false;" キャンセル
+        button.btn.btn-submit type="button" onclick="location.href='/admin/member_versions/member_version_id/assignment_versions/create_confirm.html'" 確認する
+
+
+
+

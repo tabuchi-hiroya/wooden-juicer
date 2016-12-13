@@ -1,0 +1,443 @@
+---
+title: 社員情報一覧｜社員DB
+---
+
+main.container-fluid
+  .row.row-ttl
+    h1.ttl-l1 社員情報
+  .row
+    a.btn.btn-add href="/admin/member_versions/create.html" 社員を追加
+  .search.row
+    form.search-form action="" method="post"
+      .search__row
+        .search__col-first
+          .search__col-top
+            fieldset.search__staff
+              legend.ttl-m1.ttl-b 社員情報から探す
+              table.search__table
+                tr
+                  th.search__number 社員番号
+                  td.search__number
+                    input#number.form-control type="number" name="" maxlength=""
+                tr
+                  th.search__name 名前
+                  td.search__name
+                    .table-item
+                      .form-group.label-floating
+                        label.control-label for="last-name" 姓
+                        input#last-name.form-control type="text" name="" maxlength=""
+                      .form-group.label-floating
+                        label.control-label for="first-name" 名
+                        input#first-name.form-control type="text" name="" maxlength=""
+                tr
+                  th.search__phonetic フリガナ
+                  td.search__phonetic
+                    .table-item
+                      .form-group.label-floating
+                        label.control-label for="last-name-phonetic" セイ
+                        input#last-name-phonetic.form-control type="text" name="" maxlength=""
+                      .form-group.label-floating
+                        label.control-label for="first-name-phonetic" メイ
+                        input#first-name-phonetic.form-control type="text" name="" maxlength=""
+                tr
+                  th.search__join 入社日
+                  td.search__join
+                    .table-item.range
+                      .form-group.label-floating
+                        label.control-label for="join-start" yyyy/mm/dd
+                        input#join-start.datepicker.form-control type="text"
+                      .form-group.label-floating
+                        label.control-label for="join-end" yyyy/mm/dd
+                        input#join-end.datepicker.form-control type="text"
+                tr
+                  th.search__leave 退社日
+                  td.search__leave
+                    .table-item.range
+                      .form-group.label-floating
+                        label.control-label for="leave-start" yyyy/mm/dd
+                        input#leave-start.datepicker.form-control type="text"
+                      .form-group.label-floating
+                        label.control-label for="leave-end" yyyy/mm/dd
+                        input#leave-end.datepicker.form-control type="text"
+          .search__col-bottom
+            table.search__other
+              tr
+                th.search__update 最終更新日
+                td.search__update
+                  .table-item.range
+                    .form-group.label-floating
+                      label.control-label for="update-start" yyyy/mm/dd
+                      input#update-start.datepicker.form-control type="text"
+                    .form-group.label-floating
+                      label.control-label for="update-end" yyyy/mm/dd
+                      input#update-end.datepicker.form-control type="text"
+              tr
+                th.search__term 期間指定
+                td.search__term
+                  .table-item.range
+                    .form-group.label-floating
+                      label.control-label for="term-start" yyyy/mm
+                      input#term-start.datepicker-month.form-control type="text"
+                    .form-group.label-floating
+                      label.control-label for="term-end" yyyy/mm
+                      input#term-end.datepicker-month.form-control type="text"
+              tr
+                td.search__retiree.checkbox colspan="2"
+                  label
+                    input type="checkbox"
+                    .checkbox-material 退職者を含める
+        .search__col-second
+          fieldset.search__org
+            .search__col-top
+              legend.ttl-m1.ttl-b 所属部署から探す
+              .search__org-left
+                table.search__table.search__table--org
+                  tr
+                    th.search__company 会社
+                    td.search__company
+                      select#company.chosen name="company" data-placeholder="会社を選択"
+                        option value=""
+                        option value="1" アドウェイズ
+                        option value="2" ばるびっと
+                        option value="3" こぱん
+                    td.search__company
+                      button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+                  tr
+                    th.search__group グループ
+                    td.search__group
+                      select#group.chosen name="" data-placeholder="グループを選択"
+                        option value=""
+                        option value="1" BDG
+                        option value="2" サービスデベロップメントディビジョン（SDG）
+                        option value="3" 新規領域グループ
+                    td.search__group
+                      button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+                  tr
+                    th.search__division ディビジョン
+                    td.search__division
+                      select#division.chosen name="" data-placeholder="ディビジョンを選択"
+                        option value=""
+                        option value="1" インフラ
+                        option value="2" アドテク
+                        option value="3" デベロップ
+                        option value="4" クリエイティブ
+                    td.search__division
+                      button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+                  tr
+                    th.search__unit ユニット
+                    td.search__unit
+                      select#unit.chosen name="" data-placeholder="ユニットを選択"
+                        option value=""
+                        option value="1" 第一ユニット
+                        option value="2" 第二ユニット
+                    td.search__unit
+                      button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+                  tr
+                    th.search__team チーム
+                    td.search__team
+                      select#team.chosen name="" data-placeholder="チームを選択"
+                        option value=""
+                        option value="1" 東北ユニット
+                        option value="2" 
+                        option value="3" 
+                    td.search__team
+                      button.btn.btn-sm.btn-select-org disabled="disabled" 選択
+              .search__org-right
+                table.search__table
+                  tr
+                    th.search__assumption 配属日
+                    td.search__assumption
+                      .table-item.range
+                        .form-group.label-floating
+                          label.control-label for="assumption-start" yyyy/mm/dd
+                          input#assumption-start.datepicker.form-control type="text"
+                        .form-group.label-floating
+                          label.control-label for="assumption-end" yyyy/mm/dd
+                          input#assumption-end.datepicker.form-control type="text"
+                  tr
+                    th.search__leave-department-date 離属日
+                    td.search__leave-department-date
+                      .table-item.range
+                        .form-group.label-floating
+                          label.control-label for="leave-department-date-start" yyyy/mm/dd
+                          input#leave-department-date-start.datepicker.form-control type="text"
+                        .form-group.label-floating
+                          label.control-label for="leave-department-date-end" yyyy/mm/dd
+                          input#leave-department-date-end.datepicker.form-control type="text"
+                  tr
+                    th.search__affiliation-style 所属形態
+                    td.search__affiliation-style
+                      select#affiliation-style.term-start.form-control name="term-start"
+                        option value=""
+                        option value="1" 主務
+                        option value="2" 兼務
+                  tr
+                    th.search__post 役職
+                    td.search__post
+                      select#post.chosen name="" data-placeholder="役職を選択"
+                        option value=""
+                        option value="1" チーフ
+                        option value="2" ユニットマネージャ
+                        option value="3" バイステクニカルナメージャ
+                  tr
+                    th.search__employment-status 雇用形態
+                    td.search__employment-status
+                      select#employment-status.chosen name="" data-placeholder="雇用形態を選択"
+                        option value=""
+                        option value="1" 正社員
+                        option value="2" アルバイト
+                        option value="3" バイトリーダー
+            .search__col-bottom
+              table.search__table
+                th.target-list 検索対象
+                td.target-list
+                  ul
+      .search__row
+        p.btn-search
+          button.btn 検索
+  .data-table-area.row
+    .button-list
+      a.btn.btn-sm href="/admin/member_versions/bundle/assignment_versions/update.html" 一括異動
+      button#btn-list-table-switch.btn.btn-sm.is-house 社内表示
+      button.btn.btn-sm type="button" data-toggle="modal" data-target="#modal"CSV出力
+    table.list-table.tablesorter_off1
+      thead
+        tr
+          th.list-table__transfer-check
+            | 全選択
+            br
+            span.checkbox
+              label
+                input type="checkbox" data-check="transfer-check"
+          th.list-table__present-post 現職
+          th.list-table__number 社員番号
+          th.list-table__name 名前
+          th.list-table__company 会社
+          th.list-table__group グループ
+          th.list-table__division ディビジョン
+          th.list-table__unit ユニット
+          th.list-table__team チーム
+          th.list-table__employment-status 雇用形態
+          th.list-table__post 役職
+          th.list-table__affiliation-style 所属形態
+          th.list-table__update 最終更新日
+          th.list-table__edit 操作
+      tbody
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post ★
+          td.list-table__number 2202
+          td.list-table__name 矢吹 拓
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division インフラストラクチャーディビジョン
+          td.list-table__unit 第二ユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post ユニットマネージャ
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年11月01日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post
+          td.list-table__number 2202
+          td.list-table__name 矢吹 拓
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit 情報管理ユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post ユニットマネージャ
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年10月31日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post
+          td.list-table__number 2202
+          td.list-table__name 矢吹 拓
+          td.list-table__company アドウェイズ
+          td.list-table__group 開発グループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit 情報管理ユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post ユニットマネージャ
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年03月01日          
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post
+          td.list-table__number 2202
+          td.list-table__name 矢吹 拓
+          td.list-table__company アドウェイズ
+          td.list-table__group 開発グループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit 情報管理ユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post 一般社員
+          td.list-table__affiliation-style 主
+          td.list-table__update 2014年09月30日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post ★
+          td.list-table__number 2196
+          td.list-table__name 花田 光夫
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit 第一ユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post 一般社員
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年11月01日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post
+          td.list-table__number 2196
+          td.list-table__name 花田 光夫
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit システムインテグレーションユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post 一般社員
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年10月31日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post
+          td.list-table__number 2196
+          td.list-table__name 花田 光夫
+          td.list-table__company アドウェイズ
+          td.list-table__group 開発グループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit インターネットシステムユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post 一般社員
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年03月31日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post ★
+          td.list-table__number 2187
+          td.list-table__name 田中 希
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit 第一ユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post 一般社員
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年11月01日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post
+          td.list-table__number 2187
+          td.list-table__name 田中 希
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit システムインテグレーションユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post 一般社員
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年10月31日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post
+          td.list-table__number 2187
+          td.list-table__name 田中 希
+          td.list-table__company アドウェイズ
+          td.list-table__group サービスデベロップメントグループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit TASユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post 一般社員
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年05月31日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+        tr
+          td.cell--bundle-change
+            span.checkbox
+              label
+                input.transfer-check type="checkbox"
+          td.list-table__present-post
+          td.list-table__number 2187
+          td.list-table__name 田中 希
+          td.list-table__company アドウェイズ
+          td.list-table__group 開発グループ
+          td.list-table__division デベロップメントディビジョン
+          td.list-table__unit インターネットシステムユニット
+          td.list-table__team ―
+          td.list-table__employment-status 正社員
+          td.list-table__post 一般社員
+          td.list-table__affiliation-style 主
+          td.list-table__update 2015年03月31日
+          td.list-table__edit
+            a.btn.btn-sm href="/admin/member_versions/member_version_id/assignment_versions/assignment_version_id.html" 確認
+#modal.modal.dismiss.bs role="dialog" data-backdrop="static"
+  .modal-dialog
+    .modal-content
+      .modal-header
+        .ttl-l1 CSV出力
+      .modal-body
+        p.txt-finish 出力しました。
+      .modal-footer
+        a.btn.btn-submit href="/admin/member_versions.html" 完了
