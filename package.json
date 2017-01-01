@@ -1,5 +1,5 @@
 {
-  "name": "static-site-boilerplate",
+  "name": "wooden-juicer",
   "version": "0.0.1",
   "description": "スタティックサイト開発環境の鋳型",
   "main": "gulpfile.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/buchiya4th1/static-site-boilerplate.git"
+    "url": "git+ssh://git@gitlab.com/buchiya4th1/wooden-juicer.git"
   },
   "author": "tabuchi-hiroya",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/buchiya4th1/static-site-boilerplate/issues"
+    "url": "https://gitlab.com/buchiya4th1/wooden-juicer/issues"
   },
-  "homepage": "https://gitlab.com/buchiya4th1/static-site-boilerplate#README",
+  "homepage": "https://gitlab.com/buchiya4th1/wooden-juicer#README",
   "devDependencies": {
     "browser-sync": "^2.18.2",
     "eslint": "^3.11.1",
